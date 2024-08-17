@@ -3,8 +3,11 @@ import Template from "./Template";
 
 function Code() {
   return (
-    <div id="code-examples" className="w-[90%] mx-auto md:w-[900px]  rounded-lg bg-slate-200 dark:bg-[#2d3b51] pt-9">
-      <h1 className="text-indigo-500 capitalize mt-6 font-bold text-2xl dark:text-indigo-300 pl-9">
+    <div
+      id="code-examples"
+      className="w-[90%] mx-auto md:w-[900px]  rounded-lg bg-slate-200 dark:bg-[#2d3b51] pt-9"
+    >
+      <h1 className="text-indigo-500 capitalize mt-6 font-bold text-2xl dark:text-indigo-300 pl-9 pb-9">
         Code Examples
       </h1>
       <Template
@@ -38,7 +41,10 @@ else: \
 "
         }
       />
-      <Template title={'JavaScript(Node.js)'} desc={"const axios = require('axios'); \
+      <Template
+        title={"JavaScript(Node.js)"}
+        desc={
+          "const axios = require('axios'); \
 \
 const API_KEY = 'your_api_key_here'; \
 const API_ENDPOINT = 'https://tryBookAI.com/api/generate-book'; \
@@ -63,7 +69,9 @@ axios.post(API_ENDPOINT, data, { headers }) \
     .catch(error => { \
         console.error('Error:', error.response ? error.response.data : error.message); \
     }); \
-"}/>
+"
+        }
+      />
     </div>
   );
 }
