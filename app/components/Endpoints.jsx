@@ -47,7 +47,7 @@ function Endpoints() {
         <h1 className="text-indigo-500 capitalize mt-6 font-bold text-lg dark:text-indigo-300">
           Response
         </h1>
-        <div className='bg-white dark:bg-[#2d3b51] text-black dark:text-white p-2 border border-slate-500'>
+        <div className='overflow-auto bg-white dark:bg-[#2d3b51] text-black dark:text-white p-2 border border-slate-500'>
           <p className='mb-6'>import random</p>
           <p>{"def random_color():"}</p>
           <p className='ml-7 mb-4'>{"return '#{:06x}'.format(random.randint(0, 0xFFFFFF))"}</p>

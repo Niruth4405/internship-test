@@ -6,7 +6,7 @@ function Template({ title,desc }) {
       <h2 className="text-indigo-500 capitalize mt-6 font-bold text-xl dark:text-indigo-300">
         {title}
       </h2>
-      <div className="w-[95%] border border-slate-500 p-3 rounded-md mb-5 ">
+      <div className="overflow-auto w-[95%] border border-slate-500 p-3 rounded-md mb-5 ">
         <p className='dark:text-white'>{desc}</p>
       </div>
     </div>
